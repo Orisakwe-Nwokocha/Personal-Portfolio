@@ -81,7 +81,7 @@ const Qualification = () => {
                             <div className={styles.qualification__data}>
                                 <div>
                                     <h3 className={styles.qualification__title}>Backend Engineer</h3>
-                                    <span className={styles.qualification__subtitle}>Prunny Technologies Ltd</span>
+                                    <span className={styles.qualification__subtitle}>Prunny Technologies</span>
                                     <div className={styles.qualification__calendar}>
                                         <i className="uil-calendar-alt"></i> Feb 2024 (current)
                                     </div>
@@ -91,7 +91,7 @@ const Qualification = () => {
                             <div className={styles.qualification__data}>
                                 <div>
                                     <h3 className={styles.qualification__title}>Backend Developer (Intern)</h3>
-                                    <span className={styles.qualification__subtitle}>Semicolon, Lagos</span>
+                                    <span className={styles.qualification__subtitle}>Semicolon Africa, Lagos</span>
                                     <div className={styles.qualification__calendar}>
                                         <i className="uil-calendar-alt"></i> Nov 2023 – Feb 2024
                                     </div>
@@ -101,7 +101,7 @@ const Qualification = () => {
                             <div className={styles.qualification__data}>
                                 <div>
                                     <h3 className={styles.qualification__title}>Software Engineer Trainee</h3>
-                                    <span className={styles.qualification__subtitle}>Semicolon Africa</span>
+                                    <span className={styles.qualification__subtitle}>Semicolon Africa, Lagos</span>
                                     <div className={styles.qualification__calendar}>
                                         <i className="uil-calendar-alt"></i> Jan 2023 – Nov 2023
                                     </div>
