@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./index.module.css";
-import resume from "../../assets/Orisakwe-Nwokocha-Resume.pdf"
 import Info from "./info";
 
 
@@ -38,7 +37,7 @@ const About = () => {
                         Let’s connect and create something remarkable!
                     </p>
 
-                    <a href={resume} target="_blank" rel="noopener noreferrer"
+                    <a href={process.env.REACT_APP_RESUME_LINK} target="_blank" rel="noopener noreferrer"
                        className={`button button__flex ${styles.resumeButton}`}>
                         View CV
                         <svg
