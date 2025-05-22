@@ -1,7 +1,20 @@
 import React from "react";
 import styles from "./index.module.css";
+import axios from "axios";
 
 const Data = () => {
+
+    const IPAddress = () => {
+        axios
+            .get("https://api64.ipify.org?format=json")
+            .then((response) => {
+                const ip = response.data.ip;  // Extract the IP from the response
+                console.log(`Your IP Address: ${ip}`);
+            })
+            .catch((error) => console.error("Error fetching IP:", error));
+    };
+
+    IPAddress();
 
     return (
         <div>
