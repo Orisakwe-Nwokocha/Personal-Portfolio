@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from "./index.module.css";
 
 const questions = [
     // Control Structures (1-10)
@@ -363,32 +364,42 @@ const QuizApp = () => {
                         </pre>
 
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2" role="radiogroup" aria-labelledby="question-label">
                         {Object.entries(questions[currentQuestion].options).map(([key, value]) => (
                             <div
                                 key={key}
+                                role="radio"
+                                aria-checked={selectedOption === key}
+                                tabIndex={selectedOption === key ? 0 : -1}
                                 onClick={() => handleOptionClick(key)}
-                                className={`p-3 border rounded cursor-pointer ${
-                                    selectedOption === key
-                                        ? 'bg-blue-100 border-blue-400'
-                                        : 'border-gray-300 hover:bg-gray-50'
-                                }`}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') {
+                                        e.preventDefault();
+                                        handleOptionClick(key);
+                                    }
+                                }}
+                                className={`${styles.option} ${selectedOption === key ? styles.selected : ''}`}
                             >
-                                <span className="font-bold">{key}.</span> {value}
+                                <div className={styles['option-indicator']}>
+                                    {selectedOption === key && <div className={styles['option-indicator-dot']}></div>}
+                                </div>
+                                <span className="font-bold mr-2">{key}.</span>
+                                <span>{value}</span>
                             </div>
                         ))}
                     </div>
+
                     <button
                         onClick={handleNext}
                         disabled={!selectedOption}
-                        className={`mt-4 px-4 py-2 text-white rounded ${
-                            selectedOption
-                                ? 'bg-green-500 hover:bg-green-600'
-                                : 'bg-gray-300 cursor-not-allowed'
-                        }`}
+                        className={`${styles.button} ${!selectedOption ? styles['button--disabled'] : ''}`}
                     >
-                        {currentQuestion + 1 === questions.length ? 'Finish' : 'Next'}
+                        <span className={styles.button__flex}>
+                            {currentQuestion + 1 === questions.length ? 'Finish' : 'Next'}
+                            <i className={styles.button__icon + ' fas fa-arrow-right'}></i>
+                        </span>
                     </button>
+
                 </div>
             )}
         </div>

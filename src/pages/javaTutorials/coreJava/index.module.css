@@ -1,0 +1,109 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-green: #28ae60;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-green);
+  color: var(--main-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:focus {
+  outline: 2px solid var(--main-white);
+  outline-offset: 2px;
+}
+
+.button--disabled {
+  background-color: #666;        /* Dark muted gray */
+  color: #ccc;                   /* Light gray text for contrast */
+  cursor: not-allowed;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+/*.button:hover {*/
+/*  background-color: var(--title-color-dark);*/
+/*}*/
+
+.button:hover {
+  background-color: #45a049; /* slightly darker red for hover */
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button__flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.option {
+  padding: 1rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.option:hover {
+  background-color: #f9fafb; /* gray-50 */
+}
+
+.option:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #60a5fa; /* blue-400 ring */
+}
+
+.option.selected {
+  background-color: #bfdbfe; /* blue-100 */
+  border-color: #3b82f6;     /* blue-500 */
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.4);
+}
+
+.option-indicator {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px; /* full */
+  border: 2px solid #9ca3af; /* gray-400 */
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option.selected .option-indicator {
+  border-color: #3b82f6; /* blue-500 */
+  background-color: #3b82f6;
+}
+
+.option-indicator-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background-color: white;
+}
+
