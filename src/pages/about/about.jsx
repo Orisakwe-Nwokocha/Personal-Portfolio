@@ -14,27 +14,24 @@ const About = () => {
                     <Info/>
 
                     <p className={styles.about__description}>
-                        I am Orisakwe Nwokocha, a passionate software engineer with a unique
-                        blend of technical expertise and business acumen. Transitioning from
-                        a career in accounting and strategic management to software development
-                        has allowed me to merge analytical precision with innovative problem-solving.
-                        My journey through finance and technology has equipped me with a keen eye
-                        for detail, a commitment to delivering impactful solutions, and an ability
-                        to thrive in collaborative environments. <br/> <br/>
+                        Senior Software Engineer with 3+ years of experience building high-availability
+                        payments infrastructure and core banking platforms in regulated environments.
+                        Strong background in financial technology systems, large-scale transaction
+                        processing, and compliance-driven platforms including government tax and
+                        e-invoicing systems. <br/> <br/>
 
-                        With a tech stack spanning backend engineering - Java, Python, JavaScript
-                        (using frameworks like Spring Boot, Django, and JHipster), as well as
-                        frontend development with HTML5, Reactjs, and Nextjs... I specialize in
-                        creating scalable and efficient applications. Driven by curiosity and
-                        continuous learning, I am skilled in leveraging DevOps tools like Docker,
-                        designing microservices architectures, and implementing robust backend
-                        systems. <br/> <br/>
+                        I deliver secure, scalable, and reliable financial services using Java,
+                        Spring Boot, Apache Fineract, and event-driven architectures. My expertise
+                        spans core banking account services, payment rails integration (Interswitch,
+                        NIBSS, Remita), and building Kafka-based event-driven systems for real-time
+                        processing. <br/> <br/>
 
-                        Beyond coding, I bring strong design & critical thinking, strategic planning,
-                        and leadership skills to every project, ensuring alignment between technical
-                        goals and broader business objectives.<br/>
+                        With an MBA and background in accounting, I bring strong analytical skills
+                        and business acumen to every project, ensuring technical solutions align
+                        with compliance requirements and business objectives. Currently open to
+                        remote opportunities.<br/>
 
-                        Let’s connect and create something remarkable!
+                        Let's build something impactful!
                     </p>
 
                     <a href={process.env.REACT_APP_RESUME_LINK} target="_blank" rel="noopener noreferrer"

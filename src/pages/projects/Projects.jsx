@@ -71,38 +71,40 @@ const Projects = () => {
 
     const serviceData = [
         {
-            title: "Frontend Projects",
-            description: "I create user-friendly, responsive web pages using modern JavaScript frameworks like React, " +
-                "as well as basic HTML and CSS. With a strong background in building dynamic web applications, I leverage " +
-                "technologies like React, TypeScript, JavaScript, Tailwind, and have extensive experience in API integration " +
-                "using Axios. My work is optimized for performance and accessibility, ensuring seamless experiences across " +
-                "mobile devices.",
-            icon: "uil-browser",
+            title: "Professional Experience",
+            description: "Enterprise-grade fintech and core banking solutions built at REMITA (SystemSpecs) " +
+                "and Prunny Technologies. These systems handle high-volume financial transactions, " +
+                "regulatory compliance, and real-time processing using Java, Spring Boot, Apache Fineract, " +
+                "and event-driven architectures.",
+            icon: "uil-building",
             projects: [
                 {
-                    projectName: "Nexcent Landing page",
-                    githubLink: "https://intermediate-figma-project.vercel.app/"
+                    projectName: "Invoice Aggregation Framework (E-Invoicing & Tax Compliance)",
+                    githubLink: "#"
                 },
                 {
-                    projectName: "Practice Personal Portfolio",
-                    githubLink: "https://codepen.io/Codinhood/full/gORgoRw"
+                    projectName: "Budget & Financial Management Platform (UFMS)",
+                    githubLink: "#"
                 },
                 {
-                    projectName: "Tribute Page",
-                    githubLink: "https://codepen.io/Codinhood/full/dyRMKeL"
+                    projectName: "Core Banking & Account Services (Apache Fineract CBA)",
+                    githubLink: "#"
+                },
+                {
+                    projectName: "CTFMB Core Banking Platform - 10K+ monthly transactions",
+                    githubLink: "#"
                 }
             ]
         },
         {
-            title: "Live Fullstack Projects (Deployed)",
-            description: "Built scalable and efficient fullstack systems using Java Spring Boot for the backend, Reactjs, " +
-                "Nextjs, Typescript, TailwindCSS for the frontend and " +
-                "databases like PostgreSQL or MySQL. These projects follow TDD (Test-Driven Development) principles, " +
-                "utilize GitHub Actions for CI/CD, and are deployed on platforms such as Render or AWS for the backend. ",
+            title: "Live Fullstack Projects",
+            description: "Built scalable and efficient fullstack systems using Java Spring Boot for the backend, " +
+                "React, Next.js, TypeScript, TailwindCSS for the frontend, and PostgreSQL for data persistence. " +
+                "These projects follow TDD principles and are deployed on cloud platforms.",
             icon: "uil-layers",
             projects: [
                 {
-                    projectName: "EaziRent Housing Platform",
+                    projectName: "EaziRent Housing Platform (Paystack Payments)",
                     githubLink: "https://eazi-rent-eight.vercel.app/"
                 },
                 {
@@ -112,19 +114,17 @@ const Projects = () => {
             ]
         },
         {
-            title: "Backend Projects (GitHub Repos)",
-            description: "Experienced in building scalable and efficient backend systems using technologies such as " +
-                "Java (Spring Boot) and Python (Django). These projects include both robust backend applications and " +
-                "data structure/algorithm implementations written in Java and JavaScript, ensuring performance, security, " +
-                "and optimal problem-solving capabilities.",
+            title: "Backend Projects",
+            description: "Scalable backend systems built with Java (Spring Boot) and Python (Django). " +
+                "Focus on clean architecture, security, and performance optimization.",
             icon: "uil-database",
             projects: [
                 {
-                    projectName: "E-Commerce app (Springboot)",
+                    projectName: "E-Commerce App (Spring Boot)",
                     githubLink: "https://github.com/Orisakwe-Nwokocha/eStore"
                 },
                 {
-                    projectName: "User Auth-Authz Manager (Springboot)",
+                    projectName: "User Auth-Authz Manager (Spring Boot)",
                     githubLink: "https://github.com/Orisakwe-Nwokocha/User-Auth-Authz-Mgt-Service"
                 },
                 {
@@ -132,21 +132,9 @@ const Projects = () => {
                     githubLink: "https://github.com/Orisakwe-Nwokocha/AccountManagementSystem"
                 },
                 {
-                    projectName: "Data Structures & Algorithms (Java)",
-                    githubLink: "https://github.com/Orisakwe-Nwokocha/SemicolonJava"
-                },
-                {
-                    projectName: "Data Structures & Algorithms (Python)",
-                    githubLink: "https://github.com/Orisakwe-Nwokocha/semicolon_python"
-                },
-                {
-                    projectName: "Data Structures & Algorithms (JavaScript)",
-                    githubLink: "https://github.com/Orisakwe-Nwokocha/SemicolonJavaScript"
-                },
-                {
-                    projectName: "Election Management System (Springboot)",
+                    projectName: "Election Management System (Spring Boot)",
                     githubLink: "https://github.com/Orisakwe-Nwokocha/ElectionManagementSystem"
-                },
+                }
             ]
         }
     ];

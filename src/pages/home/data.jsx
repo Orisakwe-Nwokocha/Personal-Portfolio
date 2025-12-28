@@ -6,10 +6,10 @@ const Data = () => {
     return (
         <div>
             <h1 className={styles.home__title}>Orisakwe Nwokocha</h1>
-            <h3 className={styles.home__subtitle}> Software Engineer </h3>
-            <p className={styles.home__description}>I'm a versatile software engineer based in Lagos,
-                Nigeria, specializing in both frontend and backend development. I create efficient,
-                innovative solutions that deliver impactful and seamless digital experiences.
+            <h3 className={styles.home__subtitle}>Senior Software Engineer</h3>
+            <p className={styles.home__description}>
+                3+ years building high-availability payments infrastructure and core banking platforms.
+                Specializing in Java, Spring Boot, and Apache Fineract for secure, scalable financial services.
             </p>
 
             <a href="#contact" className="button button__flex">

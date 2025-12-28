@@ -22,7 +22,7 @@ const Contact = () => {
                     <div className={styles.contact__card}>
                         <i className={`bx bxl-whatsapp ${styles.contact__card_icon}`}></i>
                         <h3 className={styles.contact__card_title}>WhatsApp</h3>
-                        <span className={styles.contact__card_data}>+2348125358910</span>
+                        <span className={styles.contact__card_data}>+234 812 535 8910</span>
                         <a href='https://wa.me/2348125358910' className={styles.contact__button} target='_blank' rel='noopener noreferrer'>
                             Message me
                             <i className={`bx bx-right-arrow-alt ${styles.contact__button_icon}`}></i>

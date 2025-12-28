@@ -20,7 +20,7 @@ const Backend = () => {
                         <i className={`bx bx-badge-check ${styles.icon}`}></i>
 
                         <div>
-                            <h3 className={styles.skills__name}>NodeJS</h3>
+                            <h3 className={styles.skills__name}>Python</h3>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ const Backend = () => {
                         <i className={`bx bx-badge-check ${styles.icon}`}></i>
 
                         <div>
-                            <h3 className={styles.skills__name}>Python</h3>
+                            <h3 className={styles.skills__name}>JavaScript</h3>
                         </div>
                     </div>
 
@@ -38,7 +38,7 @@ const Backend = () => {
                         <i className={`bx bx-badge-check ${styles.icon}`}></i>
 
                         <div>
-                            <h3 className={styles.skills__name}>GoLang</h3>
+                            <h3 className={styles.skills__name}>Node.js</h3>
                         </div>
                     </div>
                 </div>
